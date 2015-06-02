@@ -6,8 +6,15 @@ package com.thoughtworks.tw101.exercises.exercise2;
 public class Main {
     public static void main(String[] args) {
 
+        int NUMTIMES = 5;
+
         Accumulator accumulator = new Accumulator();
 
+        for(int i = 1; i <= NUMTIMES; i++) {
+            accumulator.increment();
+        }
+
+        accumulator.total();
 
     }
 }
