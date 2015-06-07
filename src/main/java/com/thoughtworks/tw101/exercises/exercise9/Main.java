@@ -1,5 +1,6 @@
 package com.thoughtworks.tw101.exercises.exercise9;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // Exercise #9: Create a class Node that implements a binary tree for Strings. It should have an add(String name) method
@@ -18,7 +19,8 @@ public class Main {
         root.add("Sara");
         root.add("Casey");
 
-        List<String> names = root.names();
+        List<String> allNames = new ArrayList<>();
+        List<String> names = root.names(allNames);
 
         for (String name : names) {
             System.out.println(name);
